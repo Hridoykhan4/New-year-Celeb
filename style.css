@@ -298,6 +298,29 @@ body {
 }
 
 
+/* NewsLetter Section */
+
+#newsletter{
+  max-width: 1200px;
+  margin: 50px auto;
+  background-color: rgb(231, 217, 219);
+  height: 500px;
+}
+
+
+.newsletter-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  gap: 20px;
+  padding: 30px;
+}
+
+
 
 @media screen and (max-width:576px) {
   .banner-container {
