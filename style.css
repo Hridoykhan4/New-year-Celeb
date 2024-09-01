@@ -267,6 +267,38 @@ body {
 }
 
 
+
+/* Portfolio Section */
+.portfolio-container{
+  max-width: 1200px;
+  margin: 70px auto;
+}
+
+.portfolio-text-content h5{
+  color: red;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.portfolio-items{
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+
+.item{
+  width: 350px;
+  margin: 0 auto;
+}
+
+.item img{
+  width: 100%;
+}
+
+
+
 @media screen and (max-width:576px) {
   .banner-container {
     
@@ -340,5 +372,10 @@ body {
 }
 .gift-box{
   flex-direction: column;
+}.item{
+  width: 80%;
+}
+.portfolio-items{
+  grid-template-columns: 1fr;
 }
 }
