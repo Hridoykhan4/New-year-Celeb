@@ -339,7 +339,6 @@ body {
 }
 
 .icons{
-  width: 400px;
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
@@ -445,5 +444,10 @@ body {
   }
   .holiday-section-container{
     display: none;
+  }.footer-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
