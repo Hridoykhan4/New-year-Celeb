@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,14 +7,14 @@
 }
 
 body {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Merriweather", serif;
 }
 
 .banner-container {
-  max-width: 1320px;
+  max-width: 1440px;
   min-height: 500px;
   margin: 0 auto;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   background-image: url(images/Banner\ Image.png);
   background-position: center;
   background-color: rgba(0, 0, 0, 0.5);
@@ -240,3 +242,9 @@ footer{
   color: wheat;
 }
 
+@media screen and (max-width:576px) {
+  .banner-container{
+    width: 100%;
+    margin: 0 auto;
+  }
+}
