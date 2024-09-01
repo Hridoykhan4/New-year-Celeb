@@ -50,8 +50,14 @@ body {
 }
 
 .offer {
-  text-align: center;
-  padding: 100px;
+  max-width: 802.9px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 70px;
+  align-items: center;
+  gap: 20px;
 }
 
 .off {
@@ -76,8 +82,8 @@ body {
 .new-year {
   display: block;
   margin: 0 auto;
-  width: 600px;
-  height: 500px;
+  /* width: 600px;
+  height: 500px; */
 }
 
 .main-one {
@@ -245,8 +251,35 @@ footer{
 }
 
 @media screen and (max-width:576px) {
-  .banner-container{
-    width: 100%;
+  .banner-container {
+    
     margin: 0 auto;
+    background-image: url(images/Banner\ Image.png);
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+    background-size: cover;
+
   }
+ 
+.offer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 70px;
+  align-items: center;
+}
+.offer img{
+  width: 100%;
+}
+.content-one{
+  font-size: 20px;
+}
+.content-two {
+  font-size: 40px;
+}
+.categories{
+  font-size: 30px;
+}
 }
