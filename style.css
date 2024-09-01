@@ -82,22 +82,73 @@ body {
 .new-year {
   display: block;
   margin: 0 auto;
-  /* width: 600px;
-  height: 500px; */
 }
 
-.main-one {
-  border-radius: 16px;
-  background: linear-gradient(90deg, rgb(7, 2, 17), rgba(7, 2, 17, 0) 100%);
-  padding: 200px;
-  text-align: left;
-  background-image: url("images/Vectorrr.png");
-  background-repeat: no-repeat;
-  background-position-x: right;
+
+/* Mid Night section */
+.midnight-party-container {
+  width: 1320px;
   height: 600px;
-  background-size: auto;
   margin: 0 auto;
+  background-image: url('./images/Vectorrr.png');
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: overlay;
+  margin: 80px 0;
+
 }
+
+.left-content{
+  width: 50%;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin: 0 auto;
+  gap: 14px;
+}
+
+.left-content h2{
+  color: white;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.left-content p{
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+
+.right-content{
+  width: 50%;
+  width: 642px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-content img{
+  width: 40%;
+  height: auto;
+
+}
+
+.btn{
+  color: white;
+  background-color: rgb(107, 117, 63);
+  padding: 20px;
+  font-weight: bolder;
+  border: none;
+  border-radius: 9px;
+}
+
 
 .welcome {
   color: rgb(255, 255, 255);
@@ -244,11 +295,6 @@ footer{
   margin-right: 100px;
 }
 
-.btn{
-  border: none;
-  background-color: black;
-  color: wheat;
-}
 
 @media screen and (max-width:576px) {
   .banner-container {
@@ -282,4 +328,17 @@ footer{
 .categories{
   font-size: 30px;
 }
+.midnight-party-container{
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  gap: 30px;
+}
+.left-content{
+  width: 100%;
+}
+.right-content{
+  width: 100%;
+}
+
 }
