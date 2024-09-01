@@ -149,35 +149,23 @@ body {
   border-radius: 9px;
 }
 
-
-.welcome {
-  color: rgb(255, 255, 255);
-  font-family: Merriweather;
-  font-size: 64px;
-  font-weight: 900;
+.event-section{
+  max-width: 1200px;
+  margin: 80px auto;
+  display: flex;
+  gap: 20px;
+  height: 300px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(236, 220, 223);
+  padding: 50px 10px;
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
 }
 
-.description-come {
-  color: rgba(255, 255, 255, 0.8);
-  font-family: Inter;
-  font-size: 18px;
-  font-weight: 400;
-}
-
-.join {
-  border: 0;
-  margin: 20px;
-}
-
-.main-two {
-  border-radius: 16px;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 0, 0, 0.1),
-    rgba(255, 0, 0, 0) 100%
-  );
-  padding: 130px 300px;
-  text-align: center;
+.event-red{
+  color: red;
+  text-decoration: underline;
 }
 
 .olange {
