@@ -168,120 +168,50 @@ body {
   text-decoration: underline;
 }
 
-.olange {
-  color: rgb(255, 0, 0);
-  font-size: 20px;
-  font-weight: 900;
-}
 
-.joinn {
-  background-color: orange;
-  border: 0;
-  border-radius: 5px;
-  color: white;
-  padding: 6px;
-  margin-top: 10px;
-}
+/* Best year Offer */
 
-.flex-kor {
-  margin-top: 20px;
-  padding: 40px;
+.best-year-offer{
+  max-width: 1200px;
+  margin: 70px auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   gap: 20px;
 }
 
-.soon {
-  color: rgb(7, 2, 17);
-  font-family: Merriweather;
-  font-size: 48px;
-  font-weight: 900;
-  line-height: 60px;
-  letter-spacing: 0%;
-  text-align: left;
-  text-transform: capitalize;
-}
-
-.offer-description {
-  color: rgba(7, 2, 17, 0.6);
-  font-family: Inter;
-  font-size: 20px;
-  font-weight: 400;
-  letter-spacing: 0%;
-  text-align: left;
-}
-
-.happy {
-  outline: 3px solid red;
-  border-radius: 50%;
-  offset: 20px;
-  object-fit: cover;
-  width: 200px;
-  height: 200px;
-}
-
-.simple {
-  padding: 80px 150px;
-  text-align: center;
-}
-
-.hudai {
-  display: flex;
-  padding: 50px;
-  gap: 25px;
-  justify-content: space-between;
-  align-items: center;
-  background-image: url("images/Group\ 44.png");
-  background-repeat: no-repeat;
-  background-image: linear-gradient(red, yellow);
-}
-
-.gift {
-  text-align: left;
-  margin-top: 50px;
-  padding: 80px;
-}
-
-.images {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 10px;
-  width: 1320px;
-  height: 1163px;
-}
-
-.newsletter{
+.happy-new-year{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #FF00000D;
-  padding: 100px;
+  gap: 20px;
 }
 
-.mama{
-  position: relative;
+.happy-new-year h4{
+  color: red;
+  font-weight: bolder;
+  font-size: 2rem;
 }
 
-.btn-danger{
-  border: 0;
-  border-radius: 20%;
-  padding: 20px;
-  color: white;
+
+
+.red-circle {
+  display: inline-block;
+  padding: 10px; 
   background-color: red;
-  position: absolute;
-  bottom: 20px;
-  right: 70px;
+  border-radius: 50%; 
 }
 
-footer{
-  display: flex;
-  background-color: black;
-  color: white;
-  padding: 60px;
-  margin-right: 100px;
-}
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width:576px) {
@@ -329,4 +259,19 @@ footer{
   width: 100%;
 }
 
+.best-year-offer{
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+.happy-new-year{
+  margin-top: 20px;
+}
+.best-offer{
+  margin-bottom: 20px;
+}
+.red-circle img{
+  width: 300px;
+  margin: 0 auto;
+}
 }
