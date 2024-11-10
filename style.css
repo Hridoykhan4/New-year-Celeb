@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap");
 
 * {
   margin: 0;
@@ -7,20 +7,25 @@
 }
 
 body {
-  font-family: "Merriweather", serif;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 /* Banner style container starts here */
 .banner-container {
   max-width: 1440px;
-  min-height: 500px;
-  margin: 0 auto;
-  margin-top: 20px;
+  width: 96%;
+  border-radius: 1rem;
+  margin: 1rem auto;
+  /* padding: 8rem 0; */
+  min-height: 32rem;
   background-image: url(images/Banner\ Image.png);
   background-position: center;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: overlay;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .content {
@@ -28,41 +33,35 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 500px;
 }
 
 .content-one {
   color: rgb(255, 255, 255);
-  font-family: Merriweather;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 400;
-  line-height: 40px;
-  letter-spacing: 0%;
-  text-align: center;
 }
 
 .content-two {
   font-size: 60px;
   font-weight: 700;
-  line-height: 95px;
   color: #fff;
-  text-align: center;
 }
 
 .offer {
-  max-width: 802.9px;
+  max-width: 40rem;
+
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 70px;
+  margin: 2rem auto;
   align-items: center;
-  gap: 20px;
+  gap: 1rem;
 }
 
 .off {
   color: rgb(255, 0, 0);
-  font-size: 52px;
+  font-size: 3.3rem;
   font-weight: 700;
 }
 
@@ -82,33 +81,35 @@ body {
 .new-year {
   display: block;
   margin: 0 auto;
+  width: 90%;
 }
 
 /* Mid Night section */
 .midnight-party-container {
-  width: 1320px;
-  height: 600px;
-  margin: 0 auto;
+  width: 90%;
+  max-width: 1440px;
+  margin: 3rem auto;
   background-image: url("./images/Vectorrr.png");
   display: flex;
+  justify-content: center;
+  justify-items: center;
   background-position: center;
   background-size: cover;
+  padding: 1rem;
   background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: overlay;
-  margin: 80px 0;
 }
 
 .left-content {
   width: 50%;
-  width: 600px;
-  display: flex;
   justify-content: center;
-  align-items: center;
+  justify-items: center;
+  display: flex;
+  min-height: 30rem;
   flex-direction: column;
-
   margin: 0 auto;
-  gap: 14px;
+  gap: 2rem;
 }
 
 .left-content h2 {
@@ -124,38 +125,39 @@ body {
 }
 
 .right-content {
-  width: 50%;
-  width: 642px;
+  width: 40%;
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .right-content img {
-  width: 40%;
-  height: auto;
+  width: 18rem;
 }
 
 .btn {
-  color: white;
-  background-color: rgb(107, 117, 63);
   padding: 20px;
+  background: none;
+  color: white;
+  font-size: larger;
   font-weight: bolder;
   border: none;
-  border-radius: 9px;
+  outline: 0;
+
+  align-self: start;
 }
 
 .event-section {
   max-width: 1200px;
-  margin: 80px auto;
+  margin: 4rem auto;
   display: flex;
-  gap: 20px;
-  height: 300px;
   flex-direction: column;
+  gap: 20px;
+  padding: 6rem;
   justify-content: center;
   align-items: center;
   background-color: rgb(236, 220, 223);
-  padding: 50px 10px;
   background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
 }
 
@@ -167,20 +169,18 @@ body {
 /* Best year Offer */
 
 .best-year-offer {
-  max-width: 1200px;
+  max-width: 1440px;
+  width: 90%;
   margin: 70px auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 2rem;
 }
 
-.happy-new-year {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+.best-offer {
+  width: 30%;
+  flex: content;
 }
 
 .happy-new-year h4 {
@@ -189,19 +189,32 @@ body {
   font-size: 2rem;
 }
 
+.red-circle img {
+  width: 16rem;
+  height: 15rem;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
 .red-circle {
-  display: inline-block;
-  padding: 10px;
-  background-color: red;
+  margin-right: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  padding: 1.5rem;
   border-radius: 50%;
+  border: 0.4rem solid red;
 }
 
 /* Holiday section */
 .holiday-section-container {
   max-width: 1320px;
-  margin: 70px auto;
+  width: 88%;
+  margin: 4rem auto;
   position: relative;
-  height: 986px;
+  height: 44rem;
 }
 
 .holiday-text {
@@ -222,47 +235,28 @@ body {
   font-weight: bolder;
 }
 
-.solid-color {
-  width: 1320px;
-  height: 229px;
-  background-color: red;
-  position: absolute;
-  top: 80%;
-  /* width: 100%; */
-}
 
-.gift-box .img1 {
-  width: 670px;
-  height: 570px;
-}
-.gift-box .img2 {
-  width: 400px;
-  height: 350px;
-  z-index: 0;
-}
 
-.gift-box {
-  margin-top: 200px;
-  z-index: 10;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.discount {
-  position: absolute;
-  bottom: 55%;
-  left: 40%;
-  z-index: 3;
-}
+
+
+
+
+
+
+
+
+
 
 /* Portfolio Section */
 .portfolio-container {
   max-width: 1200px;
-  margin: 70px auto;
+  margin: 3rem auto;
 }
 
+.portfolio-text-content{
+  padding: 1rem;
+}
 .portfolio-text-content h5 {
   color: red;
   font-size: 24px;
@@ -271,10 +265,10 @@ body {
 }
 
 .portfolio-items {
-  margin-top: 40px;
+  margin-top: 2.4rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 1rem;
 }
 
 .item {
@@ -286,13 +280,20 @@ body {
   width: 100%;
 }
 
+
+
+
+
+
+
+
 /* NewsLetter Section */
 
 #newsletter {
-  max-width: 1200px;
-  margin: 50px auto;
-  background-color: rgb(231, 217, 219);
-  height: 600px;
+  max-width: 1440px;
+  margin: 3rem auto;
+  background: rgba(255, 0, 0, 0.05);
+  width: 90%;
 }
 
 .newsletter-content {
@@ -301,35 +302,35 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
-  gap: 20px;
-  padding: 30px;
+  gap: 0.5rem;
+  padding: 2rem;
 }
 
 /* footer section */
-.footer-container{
+.footer-container {
   background-color: black;
   margin: 0 auto;
   color: white;
   margin-top: 40px;
   display: flex;
-  padding: 40px;
+  padding: 2rem;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.call{
+.call {
   display: flex;
   gap: 10px;
 }
 
-.web{
+.web {
   display: flex;
   gap: 10px;
 }
 
-.footer-first-section{
+.footer-first-section {
   display: flex;
   gap: 20px;
   justify-content: space-between;
@@ -338,7 +339,7 @@ body {
   margin-bottom: 40px;
 }
 
-.icons{
+.icons {
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
@@ -347,26 +348,16 @@ body {
   margin-top: 70px;
 }
 
-.reserved{
+.reserved {
   width: 90%;
-  margin: 60px auto;
+  margin: 4rem auto 0.3rem auto;
   display: flex;
   justify-content: space-between;
-  height: 30px;
   gap: 20px;
   justify-content: space-between;
 }
 
 @media screen and (max-width: 576px) {
-  .banner-container {
-    margin: 0 auto;
-    background-image: url(images/Banner\ Image.png);
-    background-position: center;
-    background-color: rgba(0, 0, 0, 0.6);
-    background-blend-mode: overlay;
-    background-size: cover;
-  }
-
   .offer {
     width: 100%;
     display: flex;
@@ -415,6 +406,9 @@ body {
     width: 300px;
     margin: 0 auto;
   }
+  .holiday-section-container{
+    display: none;
+  }
   .holiday-text p {
     width: 90%;
   }
@@ -435,19 +429,30 @@ body {
   }
   .portfolio-items {
     grid-template-columns: 1fr;
-  }.footer-first-section,.reserved{
+  }
+  .footer-first-section,
+  .reserved {
     flex-direction: column;
     padding: 40px;
   }
-  .icons{
+  .icons {
     flex-direction: column;
   }
-  .holiday-section-container{
-    display: none;
-  }.footer-container{
+  
+  .footer-container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+}
+
+
+@media screen and (min-width:576px) and  (max-width:1090px) {
+  .portfolio-items {
+    grid-template-columns: 1fr;
+  }
+  .holiday-section-container{
+    display: none;
   }
 }
